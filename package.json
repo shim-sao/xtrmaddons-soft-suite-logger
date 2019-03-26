@@ -1,0 +1,58 @@
+{
+  "name": "xtrmaddons-soft-suite-logger",
+  "version": "0.0.1",
+  "description": "This package is intended for the implementation and configuration of the logging system used in the various XtrmAddons NodeJs extensions and applications.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "nodemon tests/index.js",
+    "build": "babel src --out-dir dist",
+    "lint": "eslint src/index.js --fix"
+  },
+  "keywords": [
+    "XtrmAddons",
+    "logger"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "log4js": "^4.0.2",
+    "log4js-extend": "^0.2.1",
+    "module-alias": "^2.2.0",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@babel/plugin-proposal-private-methods": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/types": "^7.4.0",
+    "babel-eslint": "^11.0.0-beta.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-private-properties": "^1.0.2",
+    "eslint": "^5.15.3",
+    "eslint-plugin-babel": "^5.3.0",
+    "install": "^0.12.2",
+    "npm": "^6.9.0",
+    "regenerator-runtime": "^0.13.2",
+    "standard": "^12.0.1"
+  },
+  "_moduleAliases": {
+    "@src": "src",
+    "@dist": "dist"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "config/*",
+      "docs/*",
+      "data/*",
+      "logs/*",
+      "*.json",
+      "*.db3",
+      "*.db3-shm",
+      "*.db3-wal"
+    ],
+    "delay": "2500"
+  }
+}
