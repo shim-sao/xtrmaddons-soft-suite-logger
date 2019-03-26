@@ -12,14 +12,14 @@ const Logger = require("xtrmaddons-soft-suite-logger");
 |:----------:|:-----|:-----:| ---- |
 |`activity`| logs/*environment*.activity.log| `info` | category application activity |
 |`all`| logs/*environment*.debug.log| `trace` | to always log at any level in any environment. |
-|`app`| logs/*environment*.debug.log| `trace|error` | category for application files |
-|`data`| logs/*environment*.debug.log| `trace|error` | category for SQL & Data |
+|`app`| logs/*environment*.debug.log| `trace\|error` | category for application files |
+|`data`| logs/*environment*.debug.log| `trace\|error` | category for SQL & Data |
 |`default`| logs/*environment*.debug.log| `error` | default log only to stdout |
 |`deprecated`| logs/*environment*.deprecated.log| `warn` | category deprecated class & function |
 |`info`| logs/*environment*.activity.log| `trace` | category application informations |
-|`lib`| logs/*environment*.debug.log| `trace|error` | category application library |
-|`server`| logs/*environment*.debug.log| `trace|error` | category application server |
-|`services`| logs/*environment*.debug.log| `trace|error` | category application services & extensions |
+|`lib`| logs/*environment*.debug.log| `trace\|error` | category application library |
+|`server`| logs/*environment*.debug.log| `trace\|error` | category application server |
+|`services`| logs/*environment*.debug.log| `trace\|error` | category application services & extensions |
 
 Logger categories appenders:
 
