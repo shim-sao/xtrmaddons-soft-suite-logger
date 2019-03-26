@@ -88,6 +88,5 @@ config/
 data/*.db3
 data/*.db3-shm
 data/*.db3-wal
-dist/
 package-lock.json
 *.sqlite
