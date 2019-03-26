@@ -14,7 +14,7 @@ const Logger = require("xtrmaddons-soft-suite-logger");
 |:----------:|:-----|:-----:| ---- |
 |`activity`| logs/*environment*.activity.log| `info` | catégorie application activité |
 |`all`| logs/*environment*.debug.log| `trace` | toujours réaliser un log à n'importe quel niveau dans n'importe quel environnement. |
-|`app`| logs/*environment*.debug.log| `trace|error` | catégorie pour les fichiers d'application |
+|`app`| logs/*environment*.debug.log| `trace\|error` | catégorie pour les fichiers d'application |
 |`data`| logs/*environment*.debug.log| `trace|error` | catégorie pour SQL & Données |
 |`default`| logs/*environment*.debug.log| `error` | journal par défaut uniquement pour stdout |
 |`deprecated`| logs/*environment*.deprecated.log| `warn` | catégorie obsolète class & function |
